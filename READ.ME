@@ -1,0 +1,27 @@
+Installation
+
+It runs in a web server, so first, you need to install Apache2, php, php-pdo and php-pgsql packages.
+1
+	
+$ sudo apt install apache2 php php-pdo php-pgsql
+
+We need to download the PHP file from the Adminer web page:
+1
+	
+$ wget https://github.com/vrana/adminer/releases/download/v4.7.1/adminer-4.7.1.php
+
+And we need to move the PHP file to our apache document root:
+1
+	
+$ sudo mv adminer-4.7.1.php /var/www/html/adminer.php
+
+Then, if you're installing it on your local machine, you need to open the URL http://localhost/adminer.php in your web browser.
+
+
+CREATE new ROLE in postgresql
+
+login http://localhost/adminer.php
+localhost: 127.0.0.1
+user: new ROLE user
+password : new ROLE pass
+database : postgres
